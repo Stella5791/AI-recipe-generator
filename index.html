@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+    <title>AI Quick Recipe Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>AI Quick Recipe Generator 👩🏼‍🍳</h1>
+      </header>
+      <main>
+        <div class="form-container">
+          <form id="recipe-generator-form">
+            <input
+              type="text"
+              placeholder="Enter the recipe name"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+
+          <div class="hint">
+            i.e. seafood paella, Schnitzel, bolognese sauce, waffles, margarita
+            pizza etc.
+          </div>
+        </div>
+        <div class="recipe hidden" id="recipe"></div>
+      </main>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/Stella5791" target="_blank">Stella Bullo</a
+        >; it is
+        <a href="x" target="_blank">open sourced on GitHub</a>
+        and hosted on
+        <a href="x" target="_blank">Netlify</a>
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
